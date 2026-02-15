@@ -1,0 +1,9 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: false;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+@import "~/.config/rofi/themes.rasi"

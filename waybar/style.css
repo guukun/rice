@@ -1,0 +1,118 @@
+@import "colors.css";
+
+* {
+  border: none;
+  border-radius: 0px;
+
+  font-family: "Adwaita sans", "JetBrainsMono Nerd Font Propo";
+  font-weight: bold;
+
+  font-size: 15px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid @surface_variant;
+  border-radius: 12px;
+}
+
+tooltip label {
+  color: @primary;
+  padding: 6px;
+}
+
+#workspaces {
+  background-color: @background;
+  padding: 5px 6px;
+  margin: 0 0 0 12px;
+  border-radius: 18px;
+  border: 1px solid @surface_container;
+  color: @primary;
+}
+
+#workspaces button {
+  padding: 0px 4px;
+  margin: 0px 3px;
+  border-radius: 16px;
+  color: transparent;
+  background-color: @surface_container;
+  transition: all 150ms ease-in-out;
+}
+
+#workspaces button.active {
+  background-color: @primary;
+  color: @background;
+  min-width: 30px;
+  transition: all 150ms ease-in-out;
+}
+
+#workspaces button:hover {
+  background-color: @on_primary;
+  color: @shadow;
+  border-radius: 16px;
+  min-width: 30px;
+  background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+  background-color: @error;
+  color: @background;
+  border-radius: 16px;
+  background-size: 400% 400%;
+  transition: all 150ms ease-in-out;
+}
+
+#clock,
+#mpris,
+#tray,
+#pulseaudio,
+#custom-apps,
+#network,
+#battery,
+#temperature {
+  background-color: @background;
+  padding: 0 8px;
+  margin: 0 6px;
+  border-radius: 50px;
+}
+
+#clock {
+  color: @primary;
+}
+
+#mpris {
+  color: @primary;
+}
+
+#pulseaudio {
+  color: @primary;
+}
+
+#network {
+  color: @primary;
+}
+
+#backlight {
+  color:@primary;
+}
+
+#battery {
+  color: @primary;
+  margin-right: 8px;
+}
+
+#temperature {
+  color: @primary;
+}
+
+#custom-apps {
+  color: @primary;
+  margin-left: 8px;
+}
